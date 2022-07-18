@@ -18,8 +18,11 @@ double interval(double begin, double end, double t,
 }
 
 void postFrame(VoidCallback callback) {
-  WidgetsBinding.instance?.addPostFrameCallback((_) => callback());
+  ambiguate(WidgetsBinding.instance)?.addPostFrameCallback((_) => callback());
 }
+
+/// https://docs.flutter.dev/development/tools/sdk/release-notes/release-notes-3.0.0#if-you-see-warnings-about-bindings
+T? ambiguate<T>(T? value) => value;
 
 bool get isAvailableSwipeBack {
   var macLand = false;

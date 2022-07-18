@@ -1,3 +1,6 @@
+## 0.3.8
+* Compatible with Flutter 3
+
 ## 0.3.7
 
 * **Fixed** #72
