@@ -3,15 +3,16 @@
 [![pub package](https://img.shields.io/pub/v/material_floating_search_bar.svg)](https://pub.dartlang.org/packages/material_floating_search_bar)
 [![GitHub Stars](https://img.shields.io/github/stars/bxqm/material_floating_search_bar.svg?logo=github)](https://github.com/bxqm/material_floating_search_bar)
 
+**The repository is just a mirror of [material_floating_search_bar](https://pub.dartlang.org/packages/material_floating_search_bar).**
 
 A Flutter implementation of an expandable floating search bar, also known as persistent search, similar to the ones used extensively by Google in their own apps.
 
 <p>
-  <img width="216px" alt="CircularFloatingSearchBarTransition" src="https://raw.githubusercontent.com/bxqm/material_floating_search_bar/master/assets/circular_example.gif"/>
+  <img width="216px" alt="CircularFloatingSearchBarTransition" src="assets/circular_example.gif"/>
 
-  <img width="216px" alt="ExpandingFloatingSearchBarTransition" src="https://raw.githubusercontent.com/bxqm/material_floating_search_bar/master/assets/expanding_example.gif"/>
+  <img width="216px" alt="ExpandingFloatingSearchBarTransition" src="assets/expanding_example.gif"/>
 
-  <img width="216px" alt="SlideFadeFloatingSearchBarTransition" src="https://raw.githubusercontent.com/bxqm/material_floating_search_bar/master/assets/slide_fade_example.gif"/>
+  <img width="216px" alt="SlideFadeFloatingSearchBarTransition" src="assets/slide_fade_example.gif"/>
 </p>
 
 Click [here](https://github.com/bxqm/material_floating_search_bar/blob/master/example/lib/main.dart) to view the full example.
@@ -169,7 +170,7 @@ You can also easily create you own custom transition by extending `FloatingSearc
 
 ### Scrolling
 
-<img width="216px" alt="Scrolling" src="https://raw.githubusercontent.com/bxqm/material_floating_search_bar/master/assets/scroll_demo.gif"/>
+<img width="216px" alt="Scrolling" src="assets/scroll_demo.gif"/>
 
 A common behavior for floating search bars is to disappear when the user scrolls a `Scrollable` down and appear again when scrolling up. This can be easily achieved by passing your `Widget` to the `body` field of `FloatingSearchBar`. This way `FloatingSearchBar` can listen for `ScrollNotifications`. In order that the `FloatingSearchBar` doesn't interact with every `Scrollable` below in the widget tree, you should wrap every `Scrollable` that should interact with the `FloatingSearchBar` inside a `FloatingSearchBarScrollNotifier`.
 
@@ -224,7 +225,7 @@ The `FloatingSearchBarController` can be used to control the
 
 Sometimes a `FloatingSearchBar` might not be the most appriopriate search method for your use case. For this reason there is also the `FloatingSearchAppBar`. It is a normal `AppBar` with easy search integration very similar to the normal `FloatingSearchBar`. 
 
-<img width="312px" alt="FloatingSearchAppBar example" src="https://raw.githubusercontent.com/bxqm/material_floating_search_bar/master/assets/floating_search_app_bar_demo.png"/>
+<img width="312px" alt="FloatingSearchAppBar example" src="assets/floating_search_app_bar_demo.png"/>
 
 ### Additional Customizations
 
